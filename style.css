@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://e0.pxfuel.com/wallpapers/180/89/desktop-wallpaper-couple-alone-sunset-neon-mountains-moon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial';
+    overflow-x: hidden;
+}
+
+.hamburger-menu {
+    position: relative;
+}
+
+#menu-toggle {
+    font-size: 24px;
+    position: relative;
+    left: 0px;
+    z-index: 100;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: aliceblue;
+}
+
+#menu {
+    position: absolute;
+    top: 0px;
+    left: -260px;
+    /* background-color: rgba(128, 128, 128, 0.079); */
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.646);
+    box-shadow: 0 0 4px #3b4b4b, 0 0 6px #3b4b4b, 0 0 8px #3b4b4b;
+    color: aliceblue;
+    width: 250px;
+    height: 100vh;
+    overflow: hidden;
+    /* transform: scaleX(0); */
+    /* transform-origin: top; */
+    transition: all 0.5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 2px solid #444;
+}
+
+#menu.open {
+    /* transform: scaleX(1); */
+    left: 0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(167, 0, 0);
+    font-size: 20px;
+    color: #FFFFFF !important;
+    text-shadow: 0 0 1px #00FFFF, 0 0 2px #00FFFF, 0 0 3px #00FFFF;
+    font-weight: bolder;
+}
+
+li a:link,
+li a:visited {
+    color: #FFFFFF !important;
+    text-shadow: 0 0 1px #00FFFF, 0 0 2px #00FFFF, 0 0 3px #00FFFF;
+}
+
+.container {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 150px;
+    font-style: normal;
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+}
