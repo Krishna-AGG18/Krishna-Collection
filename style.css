@@ -7,6 +7,7 @@ body {
     background-image: url(https://e0.pxfuel.com/wallpapers/180/89/desktop-wallpaper-couple-alone-sunset-neon-mountains-moon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Arial';
     overflow-x: hidden;
 }
@@ -30,7 +31,7 @@ body {
 #menu {
     position: absolute;
     top: 0px;
-    left: -260px;
+    left: -20vw;
     /* background-color: rgba(128, 128, 128, 0.079); */
     backdrop-filter: blur(10px);
     border-right: 1px solid rgba(255, 255, 255, 0.646);
@@ -83,9 +84,12 @@ li a:visited {
     font-family: "Protest Revolution", sans-serif;
     font-weight: bolder;
     text-align: center;
-    font-size: 150px;
+    font-size: 11vw;
     font-style: normal;
     color: aliceblue;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
 }
