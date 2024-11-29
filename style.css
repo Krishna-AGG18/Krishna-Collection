@@ -19,7 +19,8 @@ body {
 #menu-toggle {
     font-size: 24px;
     position: relative;
-    left: 0px;
+    top: 5px;
+    left: 5px;
     z-index: 100;
     background: none;
     border: none;
@@ -31,8 +32,7 @@ body {
 #menu {
     position: absolute;
     top: 0px;
-    left: -20vw;
-    /* background-color: rgba(128, 128, 128, 0.079); */
+    left: -260px;
     backdrop-filter: blur(10px);
     border-right: 1px solid rgba(255, 255, 255, 0.646);
     box-shadow: 0 0 4px #3b4b4b, 0 0 6px #3b4b4b, 0 0 8px #3b4b4b;
@@ -40,15 +40,13 @@ body {
     width: 250px;
     height: 100vh;
     overflow: hidden;
-    /* transform: scaleX(0); */
-    /* transform-origin: top; */
     transition: all 0.5s ease-in-out;
 }
 
 ul {
     list-style: none;
     padding: 10px;
-    margin: 0;
+    margin: 10px;
 }
 
 li {
@@ -57,7 +55,6 @@ li {
 }
 
 #menu.open {
-    /* transform: scaleX(1); */
     left: 0;
 }
 
@@ -92,4 +89,6 @@ li a:visited {
     display: flex;
     align-items: center;
     justify-content:center ;
+}
+@media (max-width:350px) {
 }
